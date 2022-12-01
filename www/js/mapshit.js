@@ -3,7 +3,7 @@
                
                let start = {
                 center: [80, 36],
-                zoom: 1,
+                zoom: -5,
                 pitch: 0,
                 bearing: 0
                 };
