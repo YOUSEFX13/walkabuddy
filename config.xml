@@ -12,6 +12,7 @@
 
     <content src="main.html" />
     <access origin="*" />
+    
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
@@ -23,6 +24,7 @@
         <icon src=".\www\res\logo.png" density="xxxhdpi" />
         <preference name="orientation" value="portrait" />
         <preference name="android-minSdkVersion" value="15" />
+        <preferance name="android-usesCleartextTraffic" value="true" /> <allow-navigation href="*" />
 
     </platform>
     <platform name="ios">

@@ -1,0 +1,197 @@
+/* ikke slette */
+
+
+:root {
+    font-size: 16px;
+    font-family: "Open Sans";
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: rgba(117, 115, 115, 0.486);
+    --bg-secondary: #000000;
+    --transition-speed: 600ms;
+    --button-start-coulour: Green;
+    --gradwave1: #20b380;
+    --gradwave2: #7f961c;
+    --gradwave3: #19201e;
+    --navbar-iconsP: #cc0000;
+  }
+
+  
+.navbar {
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: width 600ms ease;
+    overflow: hidden;
+    margin: 5%;
+  
+  
+    border-radius: 30px;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    border-radius: 30px;
+    width: 100%;
+  }
+  
+  .nav-item {
+    width: 100%;
+  }
+  
+  .nav-item:last-child {
+    margin-top: auto;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed);
+  }
+  
+  .nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+  }
+  
+  .link-text {
+    display: none;
+    margin-left: 1rem;
+  }
+  
+  .nav-link svg {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+  }
+  
+  .fa-primary {
+    color: var(--navbar-iconsP);
+  }
+  
+  .fa-secondary {
+    color: var(--navbar-iconsP);
+  }
+  
+  .fa-primary,
+  .fa-secondary {
+    transition: var(--transition-speed);
+  }
+  
+  .logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+  }
+  
+  .logo svg {
+    transform: rotate(0deg);
+    transition: var(--transition-speed);
+  }
+  
+  .logo-text {
+    display: inline;
+    position: absolute;
+    left: -999px;
+    transition: var(--transition-speed);
+  }
+  
+  .navbar:hover .logo svg {
+    transform: rotate(-180deg);
+  }
+  
+  /* Small screens */
+  @media only screen and (max-width: 6000px) {
+    .navbar {
+      bottom: -3vw;
+      width: 90vw;
+      height: 5rem;
+      z-index: 99999;
+    }
+  
+    .logo {
+      display: none;
+    }
+  
+    .navbar-nav {
+      flex-direction: row;
+    }
+  
+    .nav-link {
+      justify-content: center;
+    }
+  
+    main {
+      margin: 0;
+    }
+  }
+  
+  .dark {
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+  }
+  
+  .light {
+    --text-primary: #1f1f1f;
+    --text-secondary: #000000;
+    --bg-primary: #ffffff00;
+    --bg-secondary: #e4e4e400;
+  }
+  
+  .crimson {
+    --text-primary: #d6b6b6;
+    --text-secondary: #fcecec;
+    --bg-primary: #3b0000b4;
+    --bg-secondary: #ff0000;
+  }
+  
+  .solar {
+    --text-primary: #576e75;
+    --text-secondary: #35535c;
+    --bg-primary: #fdf6e300;
+    --bg-secondary: #f5e5b800;
+  }
+  
+  .theme-icon {
+    display: none;
+  }
+  
+  .dark #darkIcon {
+    display: block;
+  }
+  
+  .light #lightIcon {
+    display: block;
+  }
+  
+  .solar #solarIcon {
+    display: block;
+  }
+
+  /* skriv din css der nede */
+
+  .card {
+    background-color: var(--bg-primary);
+    text-align: center;
+    font-family: sans-serif;
+    padding-bottom: 100%;
+
+  }
